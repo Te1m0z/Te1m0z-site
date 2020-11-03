@@ -50,6 +50,16 @@ section {
   margin-right: 0;
 }
 
+.line {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 10px;
+  background-color: crimson;
+  z-index: 1000;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
