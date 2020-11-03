@@ -204,6 +204,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -316,11 +317,15 @@ section {
 .about {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  min-height: 700px;
   height: 100%;
+  height: 700px;
   background: linear-gradient(45deg, rgba(207, 154, 187, 0.7) 17%, rgba(42, 192, 197, 0.7));
-  padding-top: 80px;
+  padding: 80px 0;
   font-size: 30px;
+}
+
+.about__inner {
+  height: 100%;
 }
 
 .about__title {
@@ -330,18 +335,23 @@ section {
 }
 
 .about__bottom {
+  height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about .container {
+  height: 100%;
 }
 
 .bottom__right {
-  width: 50%;
-  padding-top: 40px;
+  width: 60%;
+  margin: auto 0;
 }
 
 .bottom__right .text {
@@ -371,15 +381,22 @@ section {
 
 .bottom__left {
   width: 50%;
-  background-image: url("https://te1m0z.github.io/Te1m0z-site/img/zenitsu.png");
-  background-size: contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bottom__left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .skills {
   height: 100%;
-  min-height: 700px;
+  height: 700px;
   background: linear-gradient(315deg, rgba(123, 199, 132, 0.7), rgba(199, 123, 187, 0.7), rgba(123, 196, 199, 0.7));
   margin-top: 350px;
   padding: 80px 0;
@@ -713,6 +730,12 @@ section {
     min-width: 100vw;
     overflow-x: hidden;
   }
+  .about .bottom__right {
+    width: 50%;
+  }
+  .about .bottom__left {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -731,6 +754,9 @@ section {
 }
 
 @media screen and (max-width: 1130px) {
+  .navbar.container {
+    min-height: 90px;
+  }
   .menu-btn i.active:before {
     content: "\f00d";
   }
@@ -763,10 +789,10 @@ section {
     top: 0;
     background: #111;
     text-align: center;
-    padding-top: 80px;
+    padding: 80px 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    max-height: 100vh;
+    max-height: 50vh;
   }
   .navbar__list .dev-zone {
     display: none;
@@ -784,6 +810,7 @@ section {
     font-size: 25px;
   }
   .navbar__inner {
+    min-height: 90px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
@@ -799,6 +826,15 @@ section {
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .about .bottom__right .text {
+    font-size: 20px;
+  }
+  .about .bottom__right .text__sub {
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .home__suptitle {
     font-size: 20px;
@@ -810,9 +846,15 @@ section {
   .home__subtitle {
     font-size: 30px;
   }
+  .about__title {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 725px) {
+  .about .container {
+    padding: 0 30px;
+  }
   .home__inner .left {
     border-radius: 0;
   }
@@ -828,6 +870,15 @@ section {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .about .bottom__right .text {
+    font-size: 16px;
+  }
+  .about .bottom__right .text__sub {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 490px) {
   .home__title {
     font-size: 30px;
@@ -839,8 +890,26 @@ section {
   .menu-btn {
     margin-left: 20px;
   }
+  .navbar {
+    padding-top: 10px;
+  }
   .navbar .container {
     padding: 0 30px;
+  }
+  .about .bottom__left {
+    display: none;
+  }
+  .about .bottom__right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar__logo {
+    font-size: 40px;
+  }
+  .home__inner {
+    height: 200px;
   }
 }
 
@@ -853,6 +922,18 @@ section {
   }
   .home__subtitle {
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .navbar__logo {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 309px) {
+  .background {
+    background-position: 85.5% 50%;
   }
 }
 /*# sourceMappingURL=index.css.map */

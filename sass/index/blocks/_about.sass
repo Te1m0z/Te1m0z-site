@@ -1,22 +1,28 @@
 .about
     +bold
     color: #fff
-    min-height: 700px
     height: 100%
+    height: 700px
     background: linear-gradient(45deg, rgba(207, 154, 187, 0.7) 17%, rgba(42, 192, 197, 0.7));
-    padding-top: 80px
+    padding: 80px 0
     font-size: 30px
+    &__inner
+        height: 100%
     &__title
         text-align: center
         font-size: 50px
         text-transform: uppercase
     &__bottom
+        height: 85%
         display: flex
         justify-content: space-between
-        margin-top: 20px
+        padding-bottom: 20px
+    & .container
+        height: 100%
 .bottom__right
-    width: 50%
-    padding-top: 40px
+    width: 60%
+    // margin-top: 70px
+    margin: auto 0
     & .text
         font-size: 25px
         height: 100%
@@ -36,7 +42,11 @@
             text-align: center
 .bottom__left
     width: 50%
-    background-image: url("https://te1m0z.github.io/Te1m0z-site/img/zenitsu.png")
-    background-size: contain
-    background-position: 50% 50%
-    background-repeat: no-repeat;
+    position: relative
+    & img
+        width: 100%
+        height: 100%
+        object-fit: contain
+        position: absolute
+        top: 0
+        left: 0

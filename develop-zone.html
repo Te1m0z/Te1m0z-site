@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <section class="navbar">
@@ -39,5 +43,43 @@
             </div>
         </div>
     </section>
+
+    <section class="slider" id="slider">
+        <div class="container">
+            <div class="slider__inner" id="inner">
+                <div class="slider-title">Slider</div>
+                <div class="slider-container">
+                    <div class="slider-track" id="slider-track">
+                        <div class="slider-item">
+                            <img src="img/slides/1.png" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="img/slides/2.jpg" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="img/slides/3.jpg" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="img/slides/4.jpg" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="img/slides/5.jpg" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="img/slides/6.jpg" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="img/slides/7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <button id="btn-prev">Prev</button>
+                    <button id="btn-next">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/slider.js"></script>
 </body>
 </html>

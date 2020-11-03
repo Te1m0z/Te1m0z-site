@@ -55,3 +55,8 @@ $(document).ready(function(){
         loop: true
     })
 });
+
+
+$(window).scroll(function(){
+    $('.about').css({'top': -$(window).scrollTop()/2})
+})
