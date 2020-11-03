@@ -1,0 +1,126 @@
+.contact
+    height: 100%
+    min-height: 700px
+    margin-top: 350px
+    background: linear-gradient(rgba(216, 180, 122, 0.5), rgba(135, 60, 255, 0.5) 80%), linear-gradient(-45deg, rgba(120, 155, 255, 0.5) 25%, rgba(247, 158, 70, 0.507) 75%)
+    padding: 80px 0
+    &__title
+        text-align: center
+        font-size: 50px
+        text-transform: uppercase
+        +bold
+        color: #fff
+    &__content
+        height: 100%
+        margin-top: 40px
+        & .top
+            padding: 0 60px
+            & .title
+                text-align: center
+                +bold
+                color: #53d1e7
+                font-size: 30px
+                margin-bottom: 40px
+            & form
+                display: flex
+                justify-content: space-around
+                & .field
+                    +bold
+                    height: 45px
+                    width: 100%
+                    margin: auto 40px auto 0
+                    & input
+                        +bold
+                        height: 100%
+                        width: 100%
+                        border: 1px solid lightgrey
+                        border-radius: 6px
+                        outline: none
+                        padding: 0 15px
+                        font-size: 17px
+                & .button
+                    margin: auto 0
+                    & a
+                        height: 50px
+                        width: 120px
+                        padding: 10px 30px
+                        border: 3px solid crimson
+                        background: crimson
+                        color: #ffffff
+                        font-size: 20px
+                        border-radius: 10px
+                        transition: all 0.3s ease
+                        +rubik
+                        &:hover
+                            color: crimson
+                            background: #fff
+                & .textarea
+                    height: 100px
+                    & textarea
+                        +ubuntu
+                        height: 100%
+                        width: 100%
+                        border: 1px solid lightgrey
+                        border-radius: 6px
+                        outline: none
+                        padding: 15px 15px
+                        font-size: 17px
+                        resize: none
+        & .bottom
+            height: 100%
+            width: 100%
+            & .title
+                text-align: center
+                +bold
+                color: #53d1e7
+                font-size: 30px
+                margin-top: 40px
+            &__inner
+                background: linear-gradient(66deg, #5d0c35, #0a1752)
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 20px 0
+                border-radius: 20px
+                margin: 0 230px
+                margin-top: 40px
+                & .icons
+                    list-style: none
+                    padding: 0
+                    display: flex
+                    justify-content: space-between
+                    width: 500px
+                    cursor: pointer
+                    & .social__item
+                        width: 70px
+                        height: 70px
+                        border-radius: 50%
+                        border: 5px solid #fff
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        transition: all 0.2s ease
+                        & a
+                            transition: all 0.2s ease
+                            font-size: 40px
+                            color: #fff
+                    & .vk:hover
+                        border-color: #5298e7
+                        box-shadow: 0 0 20px #5298e7
+                        & a
+                            color: #5298e7
+                    & .git:hover
+                        border-color: #000
+                        box-shadow: 0 0 20px #000000
+                        & a
+                            color: #000000
+                    & .inst:hover
+                        border-color: #db4189
+                        box-shadow: 0 0 20px #db4189
+                        & a
+                            color: #db4189
+                    & .steam:hover
+                        border-color: #5a6981
+                        box-shadow: 0 0 20px #5a6981
+                        & a
+                            color: #5a6981

@@ -1,0 +1,79 @@
+.navbar
+    // background: #285b6b
+    position: fixed
+    width: 100%
+    z-index: 10
+    +bold
+    padding: 50px 0 0 0
+    &__list
+        padding: 30px 0
+        & a
+            text-transform: uppercase
+            font-size: 20px
+            color: #fff
+            margin-left: 30px
+            position: relative
+            letter-spacing: 3px
+            &::after
+                content: ''
+                position: absolute
+                left: 0
+                bottom: -14px
+                width: 0%
+                height: 4px
+                background: #63e0da
+                transition: all 0.2s linear
+            &:hover
+                color: #63e0da
+                &::after
+                    width: 100%
+            &:last-child
+                padding: 10px 15px
+                color: red
+                border: 2px solid red
+                transition: all 0.2s linear
+                &:hover
+                    animation: rezk 0.22s infinite ease
+                    &::after
+                        display: none
+    &__logo
+        margin: auto 0
+        font-size: 50px
+        +h1
+        color: #fff
+        letter-spacing: 6px
+        text-transform: uppercase
+        transition: all 0.4s linear
+        cursor: pointer
+        transition: transform 0.2s ease
+        & span
+            transition: all 0.4s linear
+            color: #c52656
+        &:hover
+            transform: scale(1.06)
+    &__inner
+        // background: #4d286b
+        display: flex
+        justify-content: space-between
+        padding: 0 50px
+        transition: all 0.2s ease
+        opacity: 1
+        &.fixed
+            opacity: 0
+            transform: translateY(-100%)
+.menu-btn
+    color: #ffffff
+    font-size: 30px
+    cursor: pointer
+    display: none
+
+@keyframes rezk
+    0%
+        color: #ffffff
+        border: 2px solid #fff
+        background-color: red
+    100%
+        color: red
+        border: 2px solid red
+        background-color: #fff
+        
