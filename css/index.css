@@ -284,7 +284,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -999;
-  background-image: url("../../../img/background.jpg");
+  background-image: url("https://te1m0z.github.io/Te1m0z-site/img/background.jpg");
   -webkit-animation: backgrnd 3s ease;
           animation: backgrnd 3s ease;
 }
