@@ -1,0 +1,28 @@
+@font-face {
+      font-family: "Montserrat Regular";
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+            url("../fonts/Montserrat-Regular.eot");
+}
+
+@font-face {
+      font-family: "Dosis Semibold";
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      src: url("../fonts/Dosis-SemiBold.woff") format("woff"), url("../fonts/Dosis-SemiBold.ttf") format("truetype"),
+            url("../fonts/Dosis-SemiBold.eot");
+}
+
+@font-face {
+      font-family: 'Menlo';
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      src: url('../fonts/Menlo-Regular.woff2') format('woff2'),
+          url('../fonts/Menlo-Regular.woff') format('woff'),
+          url('../fonts/Menlo-Regular.ttf') format('truetype'),
+          url('../fonts/Menlo-Regular.eot');
+  }
