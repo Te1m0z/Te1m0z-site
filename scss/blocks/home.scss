@@ -103,3 +103,35 @@
         max-width: 1200px;
     }
 }
+
+.let-highlight{
+	color: #d1b648;
+}
+
+.string-highlight{
+	color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter {
+    margin: 0;
+    
+    &::after {
+        content: "|";
+        animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
